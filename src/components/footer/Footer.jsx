@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className='col-span-2 '>
               <div>
                   <h4 className='text-2xl m-2 font-semibold'>About WeTravel</h4>
-                  <p className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in veritatis quod debitis atque saepe, recusandae, iusto unde mollitia, eius molestias ab dicta nulla totam est autem rem error aliquam.</p>
+                  <p className='m-2'>WeTravel es la plataforma donde podes conseguir hospedaje y tambien ser hospedador, facilicitamos todo el entorno de busqueda ya que podes usar multiples filtros para conseguir un lugar a tu medida.</p>
                   
                   <div className='flex justify-center m-3 text-lg'>
                       <ul className='flex items-center'>
