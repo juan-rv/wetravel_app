@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getDetail, getReview, postReview} from "../../redux/action/index";
 import { Loading } from "../Loading/Loading";
+import { getUserById, getUser } from "../../redux/action/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Footer } from "../footer/Footer";
