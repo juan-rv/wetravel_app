@@ -20,7 +20,7 @@ function Baned() {
     useEffect(() => {
         messageBaned()
         setTimeout(() => {
-            window.location.href = "http://localhost:3000/"
+            window.location.href = "https://wetravel-app.vercel.app/"
         }, 6000);
     }, [])
 

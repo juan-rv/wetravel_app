@@ -24,7 +24,7 @@ let history = useHistory()
   const getPay = () => {
     setActivePay(true)
     axios
-    .get("https://wetravelback-production-5e23.up.railway.app/mercadopay/" + user?.email)
+    .get("/mercadopay/" + user?.email)
     .then((data) => {
       setDatos(data.data);
     })
