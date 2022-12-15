@@ -50,6 +50,7 @@ export const ProfileHuesped = () => {
           let url = res.data.secure_url;
           let arrayImage = input.images;
           arrayImage.push(url);
+          message();
           const newObj = { ...input, arrayImage };
           setInput(newObj);
           // console.log("arrayImage:", arrayImage);
