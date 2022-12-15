@@ -41,7 +41,7 @@ export function getHotels(page=0) {
 } else {
   return async function (dispatch) {
     const json = await axios.get("/hotels");
-    console.log("asd",json.data)
+    //console.log("asd",json.data)
     return dispatch({
       type: GET_HOTELS,
       payload: json.data,

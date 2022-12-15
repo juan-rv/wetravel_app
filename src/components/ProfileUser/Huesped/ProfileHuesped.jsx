@@ -95,9 +95,8 @@ export const ProfileHuesped = () => {
     } else {
       dispatch(postImage(input));
       setInput({ nameUser: user?.name, images: [] });
-      history.push('/images')
-      history.go(0)
-
+      //history.push('/images')
+      //history.go(0)
     }
   };
 

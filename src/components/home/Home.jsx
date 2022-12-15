@@ -51,7 +51,7 @@ function Home() {
       {user &&
         users?.map((el) => {
           if (el.baned === true && el.email === user.email) {
-            window.location.href = "http://localhost:3000/baned";
+            window.location.href = "https://wetravel-app.vercel.app/baned";
           }
         })}
       <>

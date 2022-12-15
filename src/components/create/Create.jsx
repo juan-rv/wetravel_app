@@ -218,10 +218,10 @@ const Create = () => {
   };
 
   const handleDeletePhotos = (inputP, image, name) => {
-    console.log(name);
+    //console.log(name);
     let newArrPhotos = inputP.filter((c) => c !== image);
     if (name === "hotel") {
-      console.log("dentro del if");
+      //console.log("dentro del if");
 
       setInput({
         ...input,
