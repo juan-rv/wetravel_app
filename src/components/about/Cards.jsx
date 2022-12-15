@@ -1,7 +1,7 @@
 import React from 'react'
 import Stars from '../stars/Stars'
 import { AiFillHeart, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
-import Lucas from '../../assets/img/developers/lucas.png'
+import Lucas from '../../assets/img/developers/lucas.jpeg'
 import Santiago from '../../assets/img/developers/santiago.jpeg'
 import Juan from '../../assets/img/developers/juan.jpeg'
 import Carlos from '../../assets/img/developers/carlos.jpeg'
