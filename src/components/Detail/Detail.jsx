@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { getDetail, getReview, postReview} from "../../redux/action/index";
 import { Loading } from "../Loading/Loading";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useAuth0 } from "@auth0/auth0-react";
 import { Footer } from "../footer/Footer";
 import { Navigation } from "swiper";
 import NavBar from "../navBar/NavBar";
@@ -22,6 +23,9 @@ const Detail = (props) => {
     },
   } = props;
   const dispatch = useDispatch();
+  const { user } = useAuth0();
+  const { users } = useSelector((state) => state);
+  
   const selectedHotel = useSelector((state) => state.detail);
   const loading = useSelector((state) => state.loading);
   const { review } = useSelector((state) => state);
@@ -38,8 +42,21 @@ const Detail = (props) => {
     };
   }, [dispatch, id]);
 
+  useEffect(() => {
+    if (user) {
+      dispatch(getUserById(user.email));
+    }
+    dispatch(getUser());
+  }, [dispatch]);
+
   return (
     <div>
+      {user &&
+        users?.map((el) => {
+          if (el.baned === true && el.email === user.email) {
+            window.location.href = "https://wetravel-app.vercel.app/baned";
+          }
+        })}
       <div>
         <NavBar />
         <div>
