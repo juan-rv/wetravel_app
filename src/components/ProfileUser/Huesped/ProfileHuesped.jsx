@@ -6,6 +6,7 @@ import NavBar from "../../navBar/NavBar";
 import { Footer } from "../../footer/Footer";
 import { postImage } from "../../../redux/action/index";
 import { useDispatch } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
 import { Container } from "react-bootstrap";
 import Dropzone from "react-dropzone";
 
@@ -23,6 +24,19 @@ export const ProfileHuesped = () => {
   const history = useHistory();
   const [input, setInput] = useState(initialState);
   const [loading, setLoading] = useState("");
+
+   const message = () => {
+    toast("🕶 Felicitaciones agregaste una nueva imágen", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
 
   const submitImage = (files) => {
     const upLoader = files.map((file) => {
@@ -94,6 +108,7 @@ export const ProfileHuesped = () => {
       alert("No has subido ninguna imagen");
     } else {
       dispatch(postImage(input));
+      message();
       setInput({ nameUser: user?.name, images: [] });
       //history.push('/images')
       //history.go(0)

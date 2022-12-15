@@ -10,11 +10,13 @@ export const UserImages = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const { images } = useSelector((state) => state);
+  const { userId } = useSelector((state) => state); 
 
   useEffect(() => {
     dispatch(getImage());
     dispatch(deleteImages());
   }, [dispatch]);
+
 
   return (
     <div>
@@ -36,7 +38,7 @@ export const UserImages = () => {
         <br />
         <div className="flex flex-wrap d-flex justify-content-around">
           {images.length > 0 ? (
-            images.map((el) => {
+            images.filter((el) => userId.name.includes(el.nameUser)).map((el) => {
               return (
                 <div key={el.id} className="w-[400px] h-[auto]">
                   <Swiper
