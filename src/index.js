@@ -8,8 +8,8 @@ import {store} from "./redux/store/index"
 import { Auth0Provider } from "@auth0/auth0-react"
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:3001" //=>  para el servidor local
-//axios.defaults.baseURL= "https://wetravelback-production-5e23.up.railway.app"
+//axios.defaults.baseURL = "http://localhost:3001" //=>  para el servidor local
+axios.defaults.baseURL= "https://wetravelback-production-5e23.up.railway.app"
 
 
 
