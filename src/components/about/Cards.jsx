@@ -1,7 +1,7 @@
 import React from 'react'
 import Stars from '../stars/Stars'
 import { AiFillHeart, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
-import defect from '../../assets/img/developers/copia2.png'
+import Lucas from '../../assets/img/developers/lucas.png'
 import Santiago from '../../assets/img/developers/santiago.jpeg'
 import Juan from '../../assets/img/developers/juan.jpeg'
 import Carlos from '../../assets/img/developers/carlos.jpeg'
@@ -177,7 +177,7 @@ const Cards = () => {
           <div className='bg-white shadow-xl  w-80 rounded-3xl transition-all duration-500 ease-in-out px-2 '>
                   <div className="h-56 rounded-2xl overflow-hidden">
                   <img
-                      src={defect}
+                      src={Lucas}
                       alt="Lucas Andrada"
                       className="object-cover w-full h-full"
                   />

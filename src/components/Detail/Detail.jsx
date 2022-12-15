@@ -57,7 +57,7 @@ const Detail = (props) => {
                         selectedHotel.photos?.map((elemento, index) => {
                           return (
                             <SwiperSlide>
-                              <div className=" w-100 h-[400px]">
+                              <div className=" w-50 mx-auto h-[400px]">
                                 <img
                                   className=" w-100 h-[400px]"
                                   src={elemento}
