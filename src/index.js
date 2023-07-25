@@ -9,7 +9,7 @@ import { Auth0Provider } from "@auth0/auth0-react"
 import axios from 'axios';
 
 //axios.defaults.baseURL = "http://localhost:3001" //=>  para el servidor local
-axios.defaults.baseURL= "https://wetravel-back-end.onrender.com/"
+axios.defaults.baseURL= "https://servidor-we-travel.onrender.com"
 
 
 
